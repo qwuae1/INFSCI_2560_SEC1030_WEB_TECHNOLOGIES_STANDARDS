@@ -1,0 +1,54 @@
+[
+    {
+        "brand": "apple",
+        "series": "iphone"
+    },{
+        "brand": "apple",
+        "series": "ipad"
+    },{
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "brand": "apple",
+        "series": "imac"
+    },{
+        "brand": "apple",
+        "series": "mac"
+    },{
+        "brand": "apple",
+        "series": "watch"
+    },{
+        "brand": "apple",
+        "series": "airpod"
+    },{
+        "brand": "apple",
+        "series": "appletv"
+    },{
+        "brand": "apple",
+        "series": "ipod"
+    },{
+        "brand": "apple",
+        "series": "homepod"
+    },{
+        "brand": "microsoft",
+        "series": "surface"
+    },{
+        "brand": "microsoft",
+        "series": "surface_pro"
+    },{
+        "brand": "microsoft",
+        "series": "surface_book"
+    },{
+        "brand": "microsoft",
+        "series": "surface_go"
+    },{
+        "brand": "microsoft",
+        "series": "surface_studio"
+    },{
+        "brand": "microsoft",
+        "series": "surface_hub"
+    },{
+        "brand": "microsoft",
+        "series": "surface_laptop"
+    }
+]

@@ -1,0 +1,601 @@
+[
+    {
+        "name": "iphone11_pro_max",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "September 20, 2019",
+        "price": "$1099/$1249/$1449"
+    },{
+        "name": "iphone11_pro",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "September 20, 2019",
+        "price": "$999/$1149/$1349"
+    },{
+        "name": "iphone11",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "September 20, 2019",
+        "price": "$699/$749/$849"
+    },{
+        "name": "iphonexr",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "October 26, 2018",
+        "price": "$749/$799/$899"
+    },{
+        "name": "iphonexs_max",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "September 21, 2018",
+        "price": "$1099/$1249/$1449"
+    },{
+        "name": "iphonexs",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "September 21, 2018",
+        "price": "$999/$1149/$1349"
+    },{
+        "name": "iphonex",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "November 3, 2017",
+        "price": "$999/$1149"
+    },{
+        "name": "iphone8_plus",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "September 22, 2017",
+        "price": "$799/$949"
+    },{
+        "name": "iphone8",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "September 22, 2017",
+        "price": "$699/$849"
+    },{
+        "name": "iphone7_plus",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "September 16, 2016",
+        "price": "$769/$869/$969"
+    },{
+        "name": "iphone7",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "September 16, 2016",
+        "price": "$649/$749/$849"
+    },{
+        "name": "iphonese",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "March 31, 2016",
+        "price": "$399/$499"
+    },{
+        "name": "iphone6s",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "September 25, 2015",
+        "price": "$649/$749/$849"
+    },{
+        "name": "iphone6s_plus",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "September 25, 2015",
+        "price": "$749/$849/$949"
+    },{
+        "name": "iphone6",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "September 19, 2014",
+        "price": "$649/$749/$849"
+    },{
+        "name": "iphone6_plus",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "September 19, 2014",
+        "price": "$749/$849/$949"
+    },{
+        "name": "iphone5s",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "September 20, 2013",
+        "price": "$649/$749/$849"
+    },{
+        "name": "iphone5c",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "September 20, 2013",
+        "price": "$549/$649"
+    },{
+        "name": "iphone5",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "September 21, 2012",
+        "price": "$649/$749/$849"
+    },{
+        "name": "iphone4s",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "October 14, 2011",
+        "price": "$649/$749/$849"
+    },{
+        "name": "iphone4",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "June 21, 2010",
+        "price": "$649/$749"
+    },{
+        "name": "iphone3gs",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "June 19, 2009",
+        "price": "$599/$699"
+    },{
+        "name": "iphone3g",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "July 11, 2008",
+        "price": "$499"
+    },{
+        "name": "iphone",
+        "brand": "apple",
+        "series": "iphone",
+        "release_date": "June 29, 2007",
+        "price": "$499/$599"
+    },{
+        "name": "ipad_pro3_12.9",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "November 7, 2018",
+        "price": "$1149/$1299/$1499/$1899"
+    },{
+        "name": "ipad_pro3_11",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "November 7, 2018",
+        "price": "$949/$1099/$1299/$1699"
+    },{
+        "name": "ipad_pro2_12.9",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "June 13, 2017",
+        "price": "$929/$1029/$1229"
+    },{
+        "name": "ipad_pro2_10.5",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "June 13, 2017",
+        "price": "$779/$879/$1079"
+    },{
+        "name": "ipad_pro_9.7",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "March 31, 2016",
+        "price": "$729/$879/$1029"
+    },{
+        "name": "ipad_pro_12.9",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "November 11, 2015",
+        "price": "$1079/$1229"
+    },{
+        "name": "ipad_air3",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "March 18, 2019",
+        "price": "$629/$779"
+    },{
+        "name": "ipad_air2",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "September 7, 2016",
+        "price": "$629/$729/$829"
+    },{
+        "name": "ipad_air",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "November 1, 2013",
+        "price": "$629/$729/$829/$929"
+    },{
+        "name": "ipad_mini5",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "March 18, 2019",
+        "price": "$529/$679"
+    },{
+        "name": "ipad_mini4",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "September 9, 2015",
+        "price": "$529/$629/$729"
+    },{
+        "name": "ipad_mini3",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "October 22, 2014",
+        "price": "$529/$629/$729"
+    },{
+        "name": "ipad_mini2",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "November 12, 2013",
+        "price": "$529/$629/$729/$829"
+    },{
+        "name": "ipad_mini",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "November 2, 2012",
+        "price": " $459/$559/$659"
+    },{
+        "name": "ipad7",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "September 10, 2019",
+        "price": "$459/$559"
+    },{
+        "name": "ipad6",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "March 27, 2018",
+        "price": "$459/$559"
+    },{
+        "name": "ipad5",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "March 24, 2017",
+        "price": "$459/$559"
+    },{
+        "name": "ipad4",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "March 18, 2014",
+        "price": "$629/$729/$829/$929"
+    },{
+        "name": "ipad3",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "March 16, 2012",
+        "price": "$629/$729/$829"
+    },{
+        "name": "ipad2",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "March 11, 2011",
+        "price": "$629/$729/$829"
+    },{
+        "name": "ipad",
+        "brand": "apple",
+        "series": "ipad",
+        "release_date": "April 3, 2010",
+        "price": "$629/$729/$829"
+    },{
+        "name": "macbook_pro_2019",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_pro_2018",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_pro_2017",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_pro_2016",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_pro_2015",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_pro_2014",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_pro_2013",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_pro_2012",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_pro_2011",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_pro_2010",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_pro_2009",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_pro_2008",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_air_2019",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_air_2018",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_air_2017",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_air_2015",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_air_2014",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_air_2013",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_air_2012",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_air_2011",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_air_2010",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_air_2009",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_2017",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_2016",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "macbook_2015",
+        "brand": "apple",
+        "series": "macbook"
+    },{
+        "name": "imac_2019",
+        "brand": "apple",
+        "series": "imac"
+    },{
+        "name": "imac_2017",
+        "brand": "apple",
+        "series": "imac"
+    },{
+        "name": "imac_2015",
+        "brand": "apple",
+        "series": "imac"
+    },{
+        "name": "imac_2014",
+        "brand": "apple",
+        "series": "imac"
+    },{
+        "name": "imac_2013",
+        "brand": "apple",
+        "series": "imac"
+    },{
+        "name": "imac_2012",
+        "brand": "apple",
+        "series": "imac"
+    },{
+        "name": "imac_2011",
+        "brand": "apple",
+        "series": "imac"
+    },{
+        "name": "imac_2010",
+        "brand": "apple",
+        "series": "imac"
+    },{
+        "name": "imac_2009",
+        "brand": "apple",
+        "series": "imac"
+    },{
+        "name": "imac_pro_2017",
+        "brand": "apple",
+        "series": "imac"
+    },{
+        "name": "mac_mini_2018",
+        "brand": "apple",
+        "series": "mac"
+    },{
+        "name": "mac_mini_2014",
+        "brand": "apple",
+        "series": "mac"
+    },{
+        "name": "mac_mini_2012",
+        "brand": "apple",
+        "series": "mac"
+    },{
+        "name": "mac_mini_2011",
+        "brand": "apple",
+        "series": "mac"
+    },{
+        "name": "mac_mini_2010",
+        "brand": "apple",
+        "series": "mac"
+    },{
+        "name": "mac_mini_2009",
+        "brand": "apple",
+        "series": "mac"
+    },{
+        "name": "mac_pro_2019",
+        "brand": "apple",
+        "series": "mac"
+    },{
+        "name": "mac_pro_2013",
+        "brand": "apple",
+        "series": "mac"
+    },{
+        "name": "mac_pro_2012",
+        "brand": "apple",
+        "series": "mac"
+    },{
+        "name": "mac_pro_2010",
+        "brand": "apple",
+        "series": "mac"
+    },{
+        "name": "mac_pro_2009",
+        "brand": "apple",
+        "series": "mac"
+    },{
+        "name": "apple_watch_5",
+        "brand": "apple",
+        "series": "watch"
+    },{
+        "name": "apple_watch_4",
+        "brand": "apple",
+        "series": "watch"
+    },{
+        "name": "airpods",
+        "brand": "apple",
+        "series": "airpod"
+    },{
+        "name": "airpods_pro",
+        "brand": "apple",
+        "series": "airpod"
+    },{
+        "name": "appletv_4k",
+        "brand": "apple",
+        "series": "appletv"
+    },{
+        "name": "appletv_hd",
+        "brand": "apple",
+        "series": "appletv"
+    },{
+        "name": "appletv3",
+        "brand": "apple",
+        "series": "appletv"
+    },{
+        "name": "appletv2",
+        "brand": "apple",
+        "series": "appletv"
+    },{
+        "name": "appletv",
+        "brand": "apple",
+        "series": "appletv"
+    },{
+        "name": "ipod_touch",
+        "brand": "apple",
+        "series": "ipod"
+    },{
+        "name": "ipod_nano",
+        "brand": "apple",
+        "series": "ipod"
+    },{
+        "name": "ipod_shuffle",
+        "brand": "apple",
+        "series": "ipod"
+    },{
+        "name": "ipod_mini",
+        "brand": "apple",
+        "series": "ipod"
+    },{
+        "name": "ipod",
+        "brand": "apple",
+        "series": "ipod"
+    },{
+        "name": "homepod",
+        "brand": "apple",
+        "series": "homepod"
+    },{
+        "name": "surface",
+        "brand": "microsoft",
+        "series": "surface"
+    },{
+        "name": "surface2",
+        "brand": "microsoft",
+        "series": "surface"
+    },{
+        "name": "surface3",
+        "brand": "microsoft",
+        "series": "surface"
+    },{
+        "name": "surface_pro",
+        "brand": "microsoft",
+        "series": "surface_pro"
+    },{
+        "name": "surface_pro2",
+        "brand": "microsoft",
+        "series": "surface_pro"
+    },{
+        "name": "surface_pro3",
+        "brand": "microsoft",
+        "series": "surface_pro"
+    },{
+        "name": "surface_pro4",
+        "brand": "microsoft",
+        "series": "surface_pro"
+    },{
+        "name": "surface_pro5",
+        "brand": "microsoft",
+        "series": "surface_pro"
+    },{
+        "name": "surface_pro6",
+        "brand": "microsoft",
+        "series": "surface_pro"
+    },{
+        "name": "surface_pro7",
+        "brand": "microsoft",
+        "series": "surface_pro"
+    },{
+        "name": "surface_prox",
+        "brand": "microsoft",
+        "series": "surface_pro"
+    },{
+        "name": "surface_book",
+        "brand": "microsoft",
+        "series": "surface_book"
+    },{
+        "name": "surface_book2",
+        "brand": "microsoft",
+        "series": "surface_book"
+    },{
+        "name": "surface_go",
+        "brand": "microsoft",
+        "series": "surface_go"
+    },{
+        "name": "surface_studio",
+        "brand": "microsoft",
+        "series": "surface_studio"
+    },{
+        "name": "surface_studio2",
+        "brand": "microsoft",
+        "series": "surface_studio"
+    },{
+        "name": "surface_hub",
+        "brand": "microsoft",
+        "series": "surface_hub"
+    },{
+        "name": "surface_hub2s",
+        "brand": "microsoft",
+        "series": "surface_hub"
+    },{
+        "name": "surface_laptop",
+        "brand": "microsoft",
+        "series": "surface_laptop"
+    },{
+        "name": "surface_laptop2",
+        "brand": "microsoft",
+        "series": "surface_laptop"
+    },{
+        "name": "surface_laptop3",
+        "brand": "microsoft",
+        "series": "surface_laptop"
+    }
+]
