@@ -116,26 +116,305 @@
 ## Model View Controller, Express API, Middleware and Routing
 
 1. Know the differences between front-end and back end development.
+
+    **Frontend refers to the client-side, whereas backend refers to the server-side of the application**. Both are crucial to web development, but their roles, responsibilities and the environments they work in are totally different. Frontend is basically what users see whereas backend is responsible for saving, managing, and sometimes processing data(i.e. how it works)
+
+    why server-side:
+
+    - efficient storage and delivery of information
+    - customize user experience
+    - access control
+    - data collection and analysis
+    - heavy computation
+
 2. What is a technology stack? How do you pick one? Describe/Identify common web technology stacks.
+
+    **When referring to the technology or solution stack** - this includes the tools, frameworks and technologies used to develop a web application.
+
+    front-end or client-side:
+
+    - HTML
+    - CSS
+    - JavaScript
+    - Frameworks: Bootstrap, Foundation, Angular, React, Vue
+
+    back-end or server-side:
+
+    - Operation System
+    - Web server
+    - Database
+    - Programming Language
+    - Web Development Frameworks
+
+    **How do you pick one**:
+
+    There is no straightforward, right answer:
+
+    - user before developers, considering the needs of users first.
+    - the technology you choose should depend on the problem want to solve,
+    - what is the experience of the people developing the solution, what is your timeline? learning curve? resources available?
+    - what are the technical requirement? performance, scalability and security
+    - what is the cost? licensing, hosting
+    - check out the ecosystem. documentations and communities
+
+    **common web technology stacks**:
+
+    - MEAN: MongoDB, Express, Angular, NodeJS
+    - MERN: MongoDB, Express, React, NodeJS
+
 3. Describe the role of each layer of the Model, View, Controller (MVC) architecture.
-4. Describe the role/function of the middleware, routing , route & query parameters. Be able to use these.
+
+    **The model**: central component and represents the data structure independent from the interface. Where the data is stored.
+
+    **The view**: create representations of information, the interface of the application. How the data is displayed to the users.
+
+    **The controller**: manages the connections between the view and the model. The application logic.
+
+4. Describe the role/function of the middleware, routing, route & query parameters, views. Be able to use these.
+
+    **Middleware**: In contrast to vanilla Node, where your request flow through only one function, Express has a middleware stack, which is effectively an array of functions.
+
+    its functions can: execute any codes; make changes to the requests and response objects; end the request-response cycle and send the response back to the client; call the next function in the middleware stack.
+
+    **Routing**: Routing is a lot like middleware, but the functions are called only when you visit a specific URL with a specific HTTP method. For example, you could only run a request handler when the browser visits. Routing refers to how an application's endpoint (URLs) respond to client requests.
+
+    **Route & Query parameters**:
+    
+    - Route parameters are named URL segments that are used to capture the values specified at their position in the URL.
+    - Query parameters are used to specify optional filters, it is not a part of the route path, should begin with '?' and key-value query, combine multiple queries use '&'
+
+    **Views**: Views are used to dynamically generate HTML on the server and send it back to the client.
+
 5. What is Express? What do we use it for?
+
+    **Express** is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications, to help organize your web application into an MVC architecture on the server side.
+
+    **What do we use it for**: It is designed for building web applications and APIs. It has been called the de facto standard server framework for Node.js
 
 ## Views, Templating, CRUD, MongoDB & ORMs
 
 - Write simple EJS template code.
+
+    - <%  - 'Scriptlet' tag, for control-flow, no output
+    - <%_ - 'Whitespace Slurping' Scriptlet tag, strips all whitespace before it
+    - <%= - Outputs the value into the template (escaped)
+    - <%- - Outputs the unescaped value into the template
+    - <%# - Comment tag, no execution, no output
+    - <%% - Outputs a literal '<%'
+    - %%> - Outputs a literal '%>'
+    - %>  - Plain ending tag
+    - -%> - Trim-mode ('newline slurp') tag, trims following newline
+    - _%> - 'Whitespace Slurping' ending tag, removes all whitespace after it
+
+    ```HTML
+    Hi <%= name %>!
+    You were born in <%= birthyear %>, so that means you're
+        <%= (new Date()).getFullYear() - birthyear %> years old.
+    <% if (career) { -%>
+        <%=: career | capitalize %> is a cool career!
+    <% } else { -%>
+        Haven't started a career yet? That's cool.
+    <% } -%>
+    Oh, let's read your bio: <%- bio %> See you later!
+    ```
+
 - Know the different types of NoSQL databases.
+
+    - key-value: Riak, Amazon S3(Dynamo)
+    - graph: Neo4J
+    - column: HBase, Cassandra
+    - document: MongoDB
+
 - Know the structure of a NoSQL database.
-- Identify which CRUD operations map to each SQL or HTTP operation.
+
+    Use document-based database as example:
+
+    - Collections: collections in Mongo are equivalent to tables in relational databases. They can hold multiple JSON documents.
+    - Documents: documents are equivalent to records or rows of data in SQL. While a SQL row can reference data in other tables, Mongo documents usually combine that in a document.
+    - Fields: fields or attributes are similar to columns in a SQL table.
+    - Schema: while mongo is schema-less, SQL defines a schema via the table definition. A Mongoose schema is a document data structure(or shape of the document) that is enforced via the application layer.
+    - Models: models are higher-order constructors that take a schema and create an instance of a document equivalent to records in a relational database.
+
+- Identify which CRUD (Create, Read, Update, Delete) operations map to each SQL or HTTP operation.
+
+    | Operation       | SQL    | HTTP           | RESTful WS |
+    |-----------------|--------|----------------|------------|
+    | Create          | INSERT | PUT/POST       | POST       |
+    | Read(Retrieve)  | SELECT | GET            | GET        |
+    | Update(Modify)  | UPDATE | PUT/POST/PATCH | PUT        |
+    | Delete(Destroy) | DELETE | DELETE         | DELETE     |
+
 - Know the basic methods available in MongoDB to perform CRUD operations.
+
+    - mongoDB connection:
+
+    ```js
+    const mongodb = ("mongodb+srv://" + USERNAME + ":" + PASSWORD + "@" + HOST + "/" + DATABASE)
+    mongoose.connect(mongodb, (useNewUrlParser: true, retryWrites: true))
+    ```
+
+    - define data models
+
+    ```js
+    const mongoose = require("mongoose");
+    const Schema = mongoose.Schema;
+    const BookSchema = new Schema({
+        title: {
+            type: String,
+            required: function(){
+                return this.title.length > 3:
+            }
+        },
+        author: {
+            type: String
+        }
+    })
+
+    model.exports = mongoose.model('book', BookSchema)
+    ```
+
+    - CREATE:
+
+    ```js
+    router.post('/', function(req, res){
+        let book = new Book(req.body);
+        book.save();
+        res.status(201).send(book);
+    })
+    ```
+
+    - READ:
+
+    ```js
+    router.get("/", function(req, res) {
+        Book.find({}, functino(err, book_list){
+            res.json(book_list)
+        });
+    })
+    // RETRIEVE a specific book
+    router.get('/:bookId', function(req, res) {
+        Book.findById(req.params.bookId, function(err, book){
+            res.json(book)
+        });
+    })
+    ```
+
+    - UPDATE:
+
+    ```js
+    router.put("/:bookId", function(req, res){
+        Book.findById(req.params.bookId, function(err, book){
+            book.title = req.body.title;
+            book.author = req.body.author;
+            book.save();
+            res.json(book);
+        });
+    })
+    ```
+
+    - DELETE:
+
+    ```js
+    router.delete("/bookId", function(req, res){
+        Book.findById(req.params.bookId, function(err, book){
+            book.remove(function(err){
+                if (err) {
+                    res.status(500).send(err);
+                }else{
+                    res.status(204).send('removed');
+                }
+            });
+        });
+    })
+    ```
+
 
 ## Sessions, Cookies, Open Authentication
 
-- Kow what an HTTP session and cookie is. Understand how cookies work.
-- What are the different types of cookies? What are some attributes of cookies
-(in the HTTP header)?
+- Know what an HTTP session and cookie is. Understand how cookies work.
+
+    **HTTP sessions** is an industry standard feature that allows Web servers to maintain user identity and to store user-specific data during multiple request/response interactions between a client application and a Web application. Session can store variables - such as access rights and localization settings.
+
+    **An HTTP cookie** is a small piece of data sent from a website/server to a browser and stored on the user's computer by the user's web browser while the user is browsing. Cookies were designed to be a reliable mechanism for websites to remember stateful information or to record the user's browsing activity. Cookie can be attached to every HTTP request using the cookie HTTP Header. Mainly used for (1) Session management, (2) personalization, (3) tracking.
+
+    **How cookies work**
+
+    ![](https://i1.wp.com/4.bp.blogspot.com/-FnbFMxnKkV4/WV565AN7ifI/AAAAAAAAQZg/5_p-m1oxBqUx2CCqyqS3Y9JAUwmGO34nQCLcBGAs/s1600/1.png?zoom=2&w=687&ssl=1)
+
+- What are the different types of cookies? What are some attributes of cookies (in the HTTP header)?
+
+    **Different types of cookies**
+
+    - Session Cookie
+
+        This type of cookies dies when the browser is closed because they are stored in the browser's memory. Can be used for shopping carts or anonymous user preferences that don't need to be saved across a multiple browser sessions.
+
+    - Persistent or Permanent Cookie
+
+        Stored in a file or database in the browser. Expire at a specific data or after a specific length of time.
+
+    - Third Party Cookie
+
+        A cookie set by a different domain from the server. These cookies are used for tracking patterns and advertising.
+
+    - Secure Cookie
+
+        Cookies that are only transmitted over an encrypted connection. Browser won't send the cookie over an insecure connection.
+
+    - Zombie or Evercookies or Supercookies
+
+        Cookies that get recreated after they are deleted and persist on the client all the time. Popular with advertising and analytics trackers. VERY HARD TO DELETE.
+
+    **Some attributes of cookies in the HTTP header**
+
+    - Name: Specifies the name of a cookie for retrieving the cookie
+    - Value: Specifies the value of cookie. Max size of all cookies is 4093 bytes per domain
+    - Secure: Specifies if the cookie should only be transmitted over encrypted HTTPS connections. Default is false
+    - Domain: Specifies the domain name associated with the cookie. Helps the browser determine when to send a cookie with HTTP requests (don't want to send all cookies to all servers)
+    - Path: Specifies a server path ("/", "/users/", "/login") for sending the cookie.
+    - HTTPOnly: Means the cookie will only be available on the HTTP protocol, not accessible to JavaScript
+    - Expires: Specify when the cookie expires and should no longer be sent with HTTP Requests. If set to 0 the cookie will expire when the browser closes
+
+    ```html
+    Set-Cookie: <cookie-name>=<cookie-value> 
+    Set-Cookie: <cookie-name>=<cookie-value>; Expires=<date>
+    Set-Cookie: <cookie-name>=<cookie-value>; Max-Age=<non-zero-digit>
+    Set-Cookie: <cookie-name>=<cookie-value>; Domain=<domain-value>
+    Set-Cookie: <cookie-name>=<cookie-value>; Path=<path-value>
+    Set-Cookie: <cookie-name>=<cookie-value>; Secure
+    Set-Cookie: <cookie-name>=<cookie-value>; HttpOnly
+     <!-- Multiple directives are also possible, for example: -->
+    Set-Cookie: <cookie-name>=<cookie-value>; Domain=<domain-value>; Secure; HttpOnly
+    ```
+
 - What are the different Cookie Laws? How do they apply to us as web
 developers?
-- How do we manage state on the server-side with cookies?
-- What is OAuth? What problems does it solve? How does it benefit the user
-and developers?
+
+     The EU Directive 2009/136/EC of the European Parliament means that before somebody can store or retrieve any information from a computer, mobile phone or other device, the user must give informed consent to do so.
+
+     Make developers to follow the law when they're collecting personal data from individuals, the users must five informed consent to do so.
+
+- *How do we manage state on the server-side with cookies?
+
+    Problems with Server Side State:
+    - Sessions based on Session ID cookies are not stable and hard to scale
+    - Cookies are not supported by some mobile and desktop applications
+    - Cookies only work for a single domain
+    - to address there issues there are new approaches to managing session state by saving state on the client like JSON Web Tokens
+
+    Use Passport.JS:
+
+    Passport.JS is an authentication middleware for Node, it is designed to authenticate requests. It takes away a lot of the headaches of authenticating users and maintaining their state across request.
+
+- *What is OAuth? What problems does it solve? How does it benefit the user and developers?
+
+    **OAuth** or Open Authentication is an open-standard authorization protocol or framework used for authorization. This is also known as a secure, third-party, delegated authorization.
+
+    **For users**:
+
+    - It allows a user to log into a website like AirBnB via some other service, like Gmail
+    - Don't have to memorize multiple passwords
+
+    **For developers**:
+
+    - It lets you authenticate a user without having to implement log in
