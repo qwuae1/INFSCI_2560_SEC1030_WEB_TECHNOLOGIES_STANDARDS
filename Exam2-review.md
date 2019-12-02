@@ -128,9 +128,7 @@ allowing us to make asynchronous requests, load data outside of the standard pag
 
 A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
 
-**how to use promise and chaining**: Because .then() always returns a new promise, it’s possible to chain promises with precise control over how and where errors are handled. Promises allow you to mimic normal synchronous code’s try/catch behavior.
-
-the fetch() function returns a promise with the response of the operation.
+**how to use promise and chaining**: Because .then()(fulfilled) .catch()(rejected) always returns a new promise, it’s possible to chain promises with precise control over how and where errors are handled. Promises allow you to mimic normal synchronous code’s try/catch behavior.
 
 ### 2. Know JSON syntax and data types.
 
@@ -181,7 +179,7 @@ back-end or server-side:
 There is no straightforward, right answer:
 
 - user before developers, considering the needs of users first.
-- the technology you choose should depend on the problem want to solve,
+- what problem need to be solved, the technology you choose should depend on the problem want to solve,
 - what is the experience of the people developing the solution, what is your timeline? learning curve? resources available?
 - what are the technical requirement? performance, scalability and security
 - what is the cost? licensing, hosting
@@ -202,9 +200,7 @@ There is no straightforward, right answer:
 
 ### 4. Describe the role/function of the middleware, routing, route & query parameters, views. Be able to use these.
 
-**Middleware**: In contrast to vanilla Node, where your request flow through only one function, Express has a middleware stack, which is effectively an array of functions.
-
-its functions can: execute any codes; make changes to the requests and response objects; end the request-response cycle and send the response back to the client; call the next function in the middleware stack.
+**Middleware**: In contrast to vanilla Node, where your request flow through only one function, Express has a middleware stack, which is effectively an array of functions. It can execute any codes; make changes to the requests and response objects; end the request-response cycle and send the response back to the client; call the next function in the middleware stack.
 
 **Routing**: Routing is a lot like middleware, but the functions are called only when you visit a specific URL with a specific HTTP method. For example, you could only run a request handler when the browser visits. Routing refers to how an application's endpoint (URLs) respond to client requests.
 
